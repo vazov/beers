@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brewery_id: 
+  name: MyString
+  cat_id: 
+  style_id: 
+  abv: 
+  ibu: 
+  srm: 
+  upc: 
+  filepath,: MyString
+  descript: 
+  last_mod: MyString
+
+two:
+  brewery_id: 
+  name: MyString
+  cat_id: 
+  style_id: 
+  abv: 
+  ibu: 
+  srm: 
+  upc: 
+  filepath,: MyString
+  descript: 
+  last_mod: MyString

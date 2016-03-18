@@ -1,0 +1,37 @@
+<div id="header">
+  <h1> <%= "Beers" %></h1>
+</div>
+
+
+<div class="search"> 
+  <%= form_tag beers_path, :method => 'get', :id => "beers_search" do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Beer Search", :name => nil, class: 'btn btn-primary btn-xs'%>
+    </p>
+  <% end %>	
+</div>
+
+<div id="info">
+<div class="breweries">
+  <p class="heading">Breweries</p>
+  <div id="breweries">
+    <%= render @breweries %>
+  </div>
+</div>
+
+<div class="beers">
+  <p class="heading">Beers</p>
+  <div id="beers">
+    <%= render "beers" %>
+  </div>
+</div>
+
+<div class="description">
+  <p class="heading">Beer description</p>
+  <div id='description'>
+    <%= render "description" %>
+  </div>
+</div>
+</div>
+

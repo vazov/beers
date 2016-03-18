@@ -1,0 +1,8 @@
+<table class = "beers-list">
+  <% for beer in @beers %>
+    <tr>
+      <td> <%= link_to beer.name, beer_path(beer), remote: true %> </td>
+    </tr>
+  <%end %>
+</table>  
+<%= will_paginate @beers %> 

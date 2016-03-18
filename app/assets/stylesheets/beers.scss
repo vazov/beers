@@ -1,0 +1,73 @@
+// Place all the styles related to the beers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#header {
+    height: 50px;
+    width: 960px;
+    margin: 0 auto;
+    border-bottom: 2px solid #8bc5e8;
+}
+
+.search {
+    width: 960px;
+    height: 60px;
+    margin: 10px auto;
+    position: relative;
+}
+
+#info {
+    font-size:18px;
+    width:960px;
+    margin:0 auto;
+}
+
+#info .heading{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16pt;
+    border-bottom: 2px solid #8bc5e8;
+}
+
+.breweries{
+    width:280px;
+    float:left;
+    #breweries {
+        padding: 10px 0px 0px 0px;   
+	    height: 580px;
+	    width:270px;
+	    overflow-y:scroll;
+	    overflow-x:hidden;
+    }  
+}
+
+.beers{  
+    width:380px;
+    float:left;
+    #beers {   
+	    border-left: 1px solid #8bc5e8;
+        border-right: 1px solid #8bc5e8;
+        padding: 10px 10px 0px 10px;
+    }
+}
+
+.description{
+    width:300px;
+    float:left;
+    #description {
+        font-style: italic;   
+	    padding:10px 0 0px 10px;
+    }  
+}
+
+A {
+    text-decoration: none;
+    color: #447da6;
+}
+
+A:hover { 
+    text-decoration: underline; 
+    color: red; 
+} 
