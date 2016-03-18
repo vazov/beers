@@ -1,4 +1,4 @@
-<table class = "beers-list">
+<table>
   <% for beer in @beers %>
     <tr>
       <td> <%= link_to beer.name, beer_path(beer), remote: true %> </td>

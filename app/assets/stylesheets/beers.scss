@@ -5,7 +5,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#header {
+.logo {
     height: 50px;
     width: 960px;
     margin: 0 auto;
@@ -44,7 +44,7 @@
 }
 
 .beers{  
-    width:380px;
+    width:300px;
     float:left;
     #beers {   
 	    border-left: 1px solid #8bc5e8;
@@ -54,7 +54,7 @@
 }
 
 .description{
-    width:300px;
+    width:380px;
     float:left;
     #description {
         font-style: italic;   

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root :to => 'beers#index'
-  resources :beers, :only => [:index, :show] 
-  get "/brewery_beer" => 'beers#brewery_beer', as: 'brewery_beer'
+  resources :beers, :only => [:index, :show]
+  get '/brewery_beer' => 'beers#brewery_beer', as: 'brewery_beer'
+  get '*path' => redirect('/')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

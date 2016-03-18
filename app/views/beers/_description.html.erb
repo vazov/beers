@@ -1,8 +1,8 @@
-<div>
+<p>
   <% if @beer%> 
-	  <%= @beer.descript %>
-	  <% unless @beer.descript%>
-	    <%= "Description not found" %>
-	  <% end %>
+      <%= @beer.descript %>
+      <% unless @beer.descript%>
+        <%= "Description not found" %>
+      <% end %>
   <% end %>
-</div>
+</p>

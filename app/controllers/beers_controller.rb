@@ -1,14 +1,14 @@
 class BeersController < ApplicationController
-  def index    
+  def index
     @breweries = Brewery.all
-  	@beers = Beer.search(params[:search]).paginate(:per_page => 20, :page => params[:page])
+    @beers = Beer.search(params[:search]).paginate(:per_page => 20, :page => params[:page])
   end
 
   def show
-  	@beer = Beer.find(params[:id])
+    @beer = Beer.find(params[:id])
   end
 
   def brewery_beer
-  	@beers = Beer.where(:brewery_id => params[:brewery_id]).paginate(:per_page => 20, :page => params[:page])  
-  end    
+    @beers = Beer.where(:brewery_id => params[:brewery_id]).paginate(:per_page => 20, :page => params[:page])
+  end
 end
