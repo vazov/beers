@@ -1,8 +1,3 @@
 <p>
-  <% if @beer%> 
-      <%= @beer.descript %>
-      <% unless @beer.descript%>
-        <%= "Description not found" %>
-      <% end %>
-  <% end %>
+  <%= @beer.descript ? @beer.descript : "Description not found" if @beer%>
 </p>
